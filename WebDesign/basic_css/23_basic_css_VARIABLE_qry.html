@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variable Override</title>
+    <style>
+      :root {
+        --base-color: blue;
+      }
+
+      @media (max-width: 350px) {
+        :root {
+          --base-color: red;
+        }
+      }
+      .heading {
+        color: var(--base-color, orange);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Variable Override</h1>
+  </body>
+</html>

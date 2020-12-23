@@ -1,0 +1,34 @@
+#page {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "menu content";
+}
+
+#navbar {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-doc {
+  grid-area: content;
+}
+
+@media only screen and (max-width: 800px) {
+  #page {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-areas:
+      "menu"
+      "content";
+  }
+
+  #navbar {
+    grid-area: menu;
+    display: flex;
+  }
+
+  #main-doc {
+    grid-area: content;
+  }
+}

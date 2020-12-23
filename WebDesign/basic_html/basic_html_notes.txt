@@ -1,0 +1,83 @@
+**Heading**
+
+<h1>The Largest Heading</h1>
+<h6>The Smallest Heading</h6>
+
+**Paragraph**
+
+<p>The quick brown fox jumps over the lazy dog.</p>
+<p>Peter Parker pick a pack of pepper</p>
+
+**Comments**
+
+<!--Text inside this are comments-->
+
+**HTML5 tags** main header footer nav video article section ... 1. more descriptive 2. SEO **Images**
+<img src="urlhere" alt="text in case the image didn't load"> **Link to External Page**
+<a href="theDestinationUrl">theTextDescribingTheLink</a> **Link Inside the Same Page**
+<a href="#idOfTheSection">Target Section</a> do not use Target="\_blank" coz it will open on a new page_
+
+<h2 id="idOfTheSection">Target Section</h2>
+
+**Nesting of Element**
+
+<p>
+    Here's a <a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org</a> for you to follow.
+</p>
+
+**Dead Link**
+<a href="#">No target URL yet</a> **Image Link**
+<a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>
+
+**Unordered List**
+
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+</ul>
+
+**Order List**
+
+<ol> </ol>
+
+**Input**
+<input type="text placeholder=" optional ">
+
+**Form**
+
+<form action="/url-where-you-want-to-submit-form-data "></form>
+  <form action="/submit-cat-photo ">
+  <input type="text " required placeholder="cat photo URL ">
+<button type="submit ">Button</button>
+</form>
+
+**Radio Button**
+<label for="indoor ">
+<input id="indoor " type="radio " name="indoor-outdoor "> Indoor</input>
+</label>
+<label for="outdoor ">
+<input id="outdoor " type="radio " name="indoor-outdoor "> Outdoor
+</label>
+
+<label for="friendly "><input id="friendly " value="friendly " checked type="checkbox " name="personality "> Friendly</label>
+<label for="snob "><input id="snob " value="snob " type="checkbox " name="personality "> Snob</label>
+<label for="shy "><input id="shy " value="shy " type="checkbox " name="personality "> Shy</label>
+
+** container **
+<div></div>
+
+** doc type **
+<!DOCTYPE html>
+<html>
+    <h1>HTML</h1>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata elements -->
+  </head>
+  <body>
+    <!-- page contents -->
+  </body>
+</html>

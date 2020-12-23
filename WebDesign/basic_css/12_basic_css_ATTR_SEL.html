@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attribute Selector</title>
+    <style>
+      [type="checkbox"] {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+    <p>Which Genre Do You Prefer?</p>
+        <label for="rock">
+            <input id="rock" checked type="checkbox" name="music" /> Rock
+        </label>
+
+        <label for="pop">
+            <input id="pop" type="checkbox" name="music" /> Pop
+        </label>
+        <label for="classical">
+            <input id="classical" type="checkbox" name="musing" /> Classical
+        </label>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

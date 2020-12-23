@@ -1,0 +1,283 @@
+Basic CSS notes
+
+CSS stands for Cascading Style Sheet.  It tells the browse how you want to display the content of your HTML page.
+
+There are three ways to use CSS styling:
+1. Use the style attribute
+2. Use the style tag
+3. Use a style sheet which is defined outside of the HTML page
+
+
+
+<h2 style="color: blue;">Your Text Here</h2>
+Color can be changed using the color style property.  It is good practice to end it with ";". The above is using the style attribute
+
+<style>
+   h2 {
+       color: blue;
+   }
+</style>
+Using style tag or block, we can color all components of a HTML using the same tag.
+
+
+<style>
+  .blue-text {
+      color: blue;
+  }
+</style>
+<h2 class="blue-text">My Text</h2>
+
+.blue-text is a developer-created class.  it not a CSS keyword.  The dot is required when defining it but when we use it inside HTML the dot is not needed. The class allows us to use it on multiple elements.
+
+<style>
+  p {
+      font-size: 30px;
+  }
+</style>
+
+The above changes the font size of all paragraph.
+
+h2 {
+  font-family: sans-serif 
+}
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+The above is importing the "Lobster" font from Google
+
+h2 {
+  font-family: Lobster
+}
+p {
+  font-family: Helvetica, sans-serif;
+}
+
+
+font-family has a FAMILY-NAME and GENERIC-NAME.  Generic Name is optional and function as a fallback in case Family Name is not available.
+Family names are case sensitive and must in quotes if there spaces in between (i.e. when there are more than 1 word)
+
+
+Generic font families include monospace, serif and sans-serif
+
+<style>
+  .larger-image {
+    width: 500px;  <!-- for changing width. e.g., image -->
+  }
+</style>
+
+
+
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;  <!-- can be on an image or a border -->
+    border-radius: 50%; <!-- in px or % -->
+  }
+
+border style.
+
+multiple classes can be combined: class:"class1 class2"
+
+
+.green-background {
+  background-color: green;
+}
+
+<form id="person-info">
+</form>
+
+id attributes gives unique identifier (browser will not enforce this).  give id to one element only.
+
+
+#cat-photo-element {
+  background-color: green;
+}
+
+class a represented by dot (.) and id as #
+
+
+padding is the spaces between the content and its border. 
+as padding goes smaller, the element will look smaller
+
+margin is the spaces betwen a border and the one that surrounds it.  
+as margin goes bigger, the element will look smaller
+
+a negative margin will make the element bigger and could remove the spaces that surrounds the element
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+  }
+
+
+the padding sides can be controlled individually rather using one size
+
+it can be set like this:  
+	padding: top right bottom left;
+	padding: 40px 20px 20px 40px;
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+
+the margin sides can also be controled individually
+margin: 10px 20px 10px 20px;
+
+id, class are CSS selectors. you add these attributes to elements to change their style.
+
+  [type='checkbox'] {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+type is also selector. in the above, we are selecting those with type checkbox
+
+ABSOLUTE UNITS
+in = inch
+mm = millimeter
+
+RELATIVE UNITS
+em = based on an element font size.  if you use it, it is relative to the parent's font
+rem = 
+
+CSS INHERITANCE
+
+<style>
+  body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+  }
+
+</style>
+<h1>Hello World</h1>
+
+All HTML page has a body.  The elements will inherit its attributes.
+
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+
+  #orange-text {
+     color: orange;
+  }
+
+  .pink-text {
+    color: pink;
+  }
+
+  .blue-text {
+     color: blue;
+  }
+
+
+
+</style>
+
+<h1 class="pink-text">Hello World!</h1>
+The style that is "more specific" will take precendence
+
+
+<h1 class="blue-text pink-text">Hello World!</h1>
+The style that is defined last in <style> will be used because it overrides the first one
+
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+The id will take precedence over class no matter where it was define in <style>
+
+<h1 id="orange-text" class="pink-text blue-text" style="color: green">Hello World!</h1>
+Inline style overrides the id and class
+
+  .pink-text {
+    color: pink !important;
+  }
+"!important" will override even the inline style
+
+
+COLORS
+#000000 hexadecimal numbers 
+#RRGGBB Red Green Blue
+
+<style>
+  .red-text {
+    color: #FF0000;
+  }
+  .green-text {
+    color: #00FF00;
+  }
+  .dodger-blue-text {
+    color: #1E90FF;
+  }
+  .orange-text {
+    color: #FFA500;
+  }
+</style>
+
+below are abbreviated hex numbers/colors
+<style>
+  .red-text {
+    color: #F00;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .green-text {
+    color: #0F0;
+  }
+</style>
+
+
+<style>
+  .red-text {
+    color: rgb(255, 0, 0);
+  }
+  .orchid-text {
+    color: rgb(218, 112, 214);
+  }
+  .sienna-text {
+    color: rgb(160, 82, 45);
+  }
+  .blue-text {
+    color: rgb(0, 0, 255);
+  }
+</style>
+
+
+css variable
+--penguin-skin: gray;   <!-- defining a variable -->
+color: var(--penguin-skin);   <!-- asssigning variable -->
+color: var(--penguin-skin, gray);  <!-- using a fall back value, not IE compabtible --> 
+
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;  <--! for browser compatibility issues -->
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
+
+
+
+

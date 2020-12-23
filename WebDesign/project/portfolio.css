@@ -1,0 +1,65 @@
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+#welcome-section {
+  margin-top: 48px;
+  text-align: center;
+  background: lightskyblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+#projects {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "project project"
+    "tribute survey";
+}
+
+iframe {
+  height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  frame {
+    height: 200px;
+  }
+}
+
+#tribute {
+  grid-area: tribute;
+}
+
+#survey {
+  grid-area: survey;
+}
+
+#projtitle {
+  grid-area: project;
+}
+
+#profile {
+  margin-top: 30px;
+  text-align: center;
+}

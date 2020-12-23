@@ -1,0 +1,54 @@
+Hi. I'm Jojo Gabriel.
+
+In this video, I'm going to share what I learned from Free Code Camp's course called Responsive Web Design. I'm going to cover the first section: Basic HTML.
+
+DOCTYPE is telling the brownser what version of HTML it needs to use.  HTML (html) is indicating that it should use HTML5.
+
+HTML tag will surround the the rest of the document.  Most tags contain beginning and closing tag.  In this case, it is HTML and /HTML
+
+The HEAD tag enclose information about the page.  This information will not be show to the end-user or reader of the page.  The HEAD contains only the TITLE of page.
+
+The BODY will contain the information that will be shown to the reader. 
+
+There are various HEADING sizes.  We have H1 which is the largest and H6 which is the smallest. You can see on the right-hand size how the heading tags are implemented.
+
+P stands for PARAGRAPH which contains longer text.  In this portion of the page, we have two paragraphs.
+
+IMG is for displaying pictures. SRC contains the path of the picture.  In this example, we are saying it is on the current folder. ALT stands for alternative. The text inside it will be displayed in case the browser failed to load the image.
+
+The ANCHOR tag is use to dispay a link to another page or site.  In here, I'm linking to w3schools.  If I click here, it will open the link on the same tab.  I will use right click instead, and open it in a new tab.
+
+The ANCHOR can also link into another section of the page.  In this example, it is going to go a section called TARGETSECTION which is the second paragraph below.  To show you how it works, I'll click on this link and it will jump to the target paragraph.
+
+The ANCHOR tag can open page in a new tab.  The TARGET which is equal to _blank will do this.
+
+During the early stage of page development, we might not know the complete URL.  As a temporary solution, we can use #.
+
+We can also use an IMG as a link.  The IMG should be inside the ANCHOR tag.  You would know that an IMG is a link when the cursor change its form.  So in here, it change from Arrow to a Hand.
+
+The BR are line breaks. I'm using it to create vertical spaces.
+
+There two different types of list.  UNORDERED and ORDERED list.  [point to UL and OL]  The unordered list will display bullet points and order list will display sequential numbers.
+
+A FORM can contain various INPUT.  
+
+We have TEXT for the name.  It is a REQUIRED field. When we click the SUBMIT button without typing any, an error message will be displayed. The text field also has a PLACEHOLDER which contains a text that will be displayed inside the field.
+
+We also have RADIO BUTTONS.   We have two different values: Star Wars and Back To The Future.
+The NAME must be the same but the VALUE should be different so that we start processing the form it will be more readable than the default value which is ON.
+
+The LABEL identifies that the text here is for this radio button.
+
+We can also use CHECKBOX.  In here we have three possible values.   Rock, Pop, and Classical. 
+
+Again we are using LABEL to link the text and the INPUT field.
+
+If we want the RADIO BUTTON and the CHECKBOX to have a default value we can use the keyword CHECKED.
+
+At the bottom of the FORM we have a BUTTON for submitting it to the server.  It has a type of SUBMIT.
+
+FOOTER is one of the HTML5 tag that can be used to display information at the end of the page.
+
+Thanks for watching. I hope you find it useful. I will post more videos as I learn new things. Please subscribe. Bye.
+
+ 

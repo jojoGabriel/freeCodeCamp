@@ -1,0 +1,10 @@
+var x = 100;
+console.log(x);
+x += 100;
+console.log(x);
+x -= 50;
+console.log(x);
+x *= 2;
+console.log(x);
+x /= 3;
+console.log(x);

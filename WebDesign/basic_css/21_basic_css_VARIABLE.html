@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variable</title>
+    <style>
+      :root {
+        color: orangered;
+      }
+      body {
+        --base-color: blue;
+      }
+      .heading {
+        color: var(--base-color);
+      }
+      .sub-heading {
+        color: var(--bass-color, red);
+      }
+      .para {
+        color: var(--bass-color);
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Variable</h1>
+    <h2 class="sub-heading">Alternate</h2>
+    <p class="para">Compatible</p>
+  </body>
+</html>
